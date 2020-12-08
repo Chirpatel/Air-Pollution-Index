@@ -1,0 +1,19 @@
+.navbar{
+    height: 50px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+.navbar-logo {
+    padding: 10px;
+  }
+
+.navbar-logo p{
+ margin:auto;
+ font-size: 20px;
+ font-weight: bold;
+}
+.navbar-logo p:hover{
+    cursor: pointer;
+}
