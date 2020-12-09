@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const CityDataApi = async ({State,City}) =>{
-    console.log(State,City);
+    //console.log(State,City);
     var config = {
         method: 'get',
         url: `https://air-pollution-index.glitch.me/search/${State}/${City}`,

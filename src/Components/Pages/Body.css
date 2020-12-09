@@ -45,4 +45,159 @@
     50% { border-color: transparent; }
   }
 
+.last-updated{
+  margin:10px;
+}
+.select{
+  display: flex;
+  justify-content: center;
+}
+.option{
+  margin:0 auto;
+  border: 1px solid black;
+  height: 200px;
+  width: 300px;
+  border-radius:5px;
+  background-color: white;
+}
 
+.option-state-select,.option-city-select{
+  height: 40px;
+  width: calc(100% - 20px);
+  font-size: 18px;
+  margin: 15px 10px;
+  border-radius: 5px;
+}
+.option-default{
+ color:grey;
+}
+.option-regular{
+  color:black;
+}
+.option-prevent-click{
+  pointer-events:none;
+}
+
+.option-button{
+  margin-top:15px;
+  display:flex;
+  justify-content: center;
+}
+
+.option-button-submit{
+  margin: 0 auto;
+}
+.option-button-submit button{
+  height: 30px;
+  width: 100px;
+  font-size: 18px;
+}
+
+.data-view-container{
+  display:flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.data-view-body{
+  margin: 0 auto;
+}
+.data-view-body3{
+  width: 1030px;
+}
+.data-view-body2{
+  width: 686px;
+}
+.data-view-body1{
+  width: 341px;
+}
+
+@media (min-width: 687px) and (max-width: 1082px) {
+  .data-view-body3{
+    width: 686px;
+  }
+}
+@media screen and (max-width: 686px) {
+  .data-view-body3{
+    width: 341px;
+  }
+  .data-view-body2{
+    width: 341px;
+  }
+  .data-view-container{
+    margin-bottom: 40px;
+  }
+}
+.data-view-column {
+  border: 1px solid aquamarine;
+  display: inline-table;
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+}
+.data-view-column h1{
+  font-size: 20px;
+  height: 60px;
+  text-align: center;
+  border-bottom: black 1px solid;
+}
+.data-view-table thead tr th,.data-view-table tbody tr td{
+  width: 80px;
+  text-align: center;
+}
+.data-view-table{
+  padding-right: 5px;
+}
+.box {
+  float: right;
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+  clear: both;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.disclaimer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 2px;
+}

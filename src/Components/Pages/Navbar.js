@@ -4,7 +4,7 @@ function Navbar() {
     return (
         <div className="navbar">
             <div className="navbar-logo">
-                <p onClick={()=>{window.location='/'}}>Air Pollution Index</p>
+                <p onClick={()=>{window.location='/'}}>Air Pollution Index (India)</p>
             </div>
         </div>
     )
